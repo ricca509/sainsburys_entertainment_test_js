@@ -9,13 +9,36 @@ I decided to go for the latest and greatest.
 
 ## How you test it
 
-To install deps: `npm install`
+You need `webpack` and `webpack-dev-server` installed globally.
 
-To run tests: `karma start`
+```
+$ npm install webpack -g
+```
+```
+npm install webpack-dev-server -g
+```
 
-To see the result: `webpack`, then open `index.html`
+To install deps:
+```
+npm install
+```
 
-Or, easier `webpack-dev-server` then open `http://localhost:8080/webpack-dev-server/`
+To run tests:
+```
+karma start
+```
+
+To see the result:
+```
+webpack
+```
+then open `index.html`
+
+Or, easier
+```
+webpack-dev-server
+```
+then open `http://localhost:8080/webpack-dev-server/`
 
 ## Small note
 Flickr users upload their pictures quite often: doing the same search again
