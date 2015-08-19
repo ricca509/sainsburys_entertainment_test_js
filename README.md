@@ -50,4 +50,6 @@ I ended up using the `sessionStorage`, so the first time it takes the data comin
 
 If you close the tab and try again, the process will start again. Having data coming from one point and saving to another is not great, that's why I decided to centralize the storage point.
 
-That's it!
+See it!
+
+![](http://g.recordit.co/2m0M537Sk0.gif)
