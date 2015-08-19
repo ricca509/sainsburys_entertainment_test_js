@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sainsbury’s Entertainment Test - js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section data-role='react-app'></section>
+
+    <script src="bundle.js"></script>
+    <script type="text/javascript">
+        (function () {
+            window.cb = function (data) {
+                window.photos = data.items;
+                
+                window.startApp();
+            }
+            var tags='london';
+            var script=document.createElement('script');
+            script.src= 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=cb&tags='+tags;
+            document.head.appendChild(script);
+        })();
+
+        </script>
+</body>
+
+</html>
